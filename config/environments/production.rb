@@ -60,7 +60,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "STEPHANEPOLETTI_production"
+  # config.active_job.queue_name_prefix = "contactforminrails6_production"
 
   config.action_mailer.perform_caching = false
 
@@ -104,16 +104,7 @@ Rails.application.configure do
   #
   # The `database_resolver` class is used by the middleware to determine which
   # database is appropriate to use based on the time delay.
-  #ActionMailer::Base.smtp_settings = {
-ActionMailer::Base.smtp_settings = {
-  :port           => ENV['MAILGUN_SMTP_PORT'],
-  :address        => ENV['MAILGUN_SMTP_SERVER'],
-  :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
-  :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-  :domain         => 'stephanepoletti.heroku.com', # UPDATE THIS VALUE WITH YOUR OWN APP
-  :authentication => :plain
-}
-ActionMailer::Base.delivery_method = :smtp
+  #
   # The `database_resolver_context` class is used by the middleware to set
   # timestamps for the last write to the primary. The resolver uses the context
   # class timestamps to determine how long to wait before reading from the
@@ -126,4 +117,21 @@ ActionMailer::Base.delivery_method = :smtp
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
+
+
+
+  ActionMailer::Base.smtp_settings = {
+    :port           => ENV['MAILGUN_SMTP_PORT'],
+    :address        => ENV['MAILGUN_SMTP_SERVER'],
+    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+    :domain         => 'stephanepoletti.heroku.com', # UPDATE THIS VALUE WITH YOUR OWN APP
+    :authentication => :plain,
+  }
+  ActionMailer::Base.delivery_method = :smtp
+
+
+
+
+
 end
