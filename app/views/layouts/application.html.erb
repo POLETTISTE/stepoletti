@@ -13,6 +13,14 @@
   </head>
 
   <body>
+    <h1>Stéphane POLETTI layout</h1>
+
+    <div class="container">
+  <br>
+  <% flash.each do |key, message| %>
+    <p class="alert alert-<%= key %>"><%= message %></p>
+  <% end %>
+</div>
     <%= yield %>
   </body>
 </html>
