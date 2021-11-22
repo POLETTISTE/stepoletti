@@ -111,7 +111,7 @@ ActionMailer::Base.smtp_settings = {
   :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
   :password       => ENV['MAILGUN_SMTP_PASSWORD'],
   :domain         => 'stephanepoletti.heroku.com', # UPDATE THIS VALUE WITH YOUR OWN APP
-  :authentication => :plain,
+  :authentication => :plain
 }
 ActionMailer::Base.delivery_method = :smtp
   # The `database_resolver_context` class is used by the middleware to set
