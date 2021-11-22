@@ -2,8 +2,6 @@
 
 class Contact < MailForm::Base
 
-  has_one_attached :photo
-
   attribute :name,      validate: true
   attribute :firstname
   attribute :email,     validate: /\A([\w.%+\-]+)@([\w\-]+\.)+(\w{2,})\z/i
