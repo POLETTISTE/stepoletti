@@ -1,23 +1,36 @@
-<div class="container">
-  <h1>Contact Form</h1>
+
+
+
+<div class="container text-center p-3" id="newform">
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold my-4">Contactez moi</h2>
+    <!--Section description-->
+    <p class="w-responsive mx-auto mb-5">Vous avez un projet, des questions? </p>
+     <p class="w-responsive mx-auto mb-5"> N'hésitez pas à me contacter par téléphone au 07 77 00 15 18, ou par formulaire de contact ci-dessous  !
+
   <%= form_for @contact do |f| %>
-    <div class="col-md-6">
-      <%= f.label :name %></br>
+    <div class="col-md-12">
+      <%= f.label :name, "Nom" %></br>
       <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
 
-      <%= f.label :email %></br>
-      <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+      <%= f.label :firstname, "Prénom" %></br>
+      <%= f.text_field  :firstname, required: true, class: "contact-form-text-area"%></br>
 
-      <%= f.label :message %></br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-            placeholder: "Send me a message"%></br>
+      <%= f.label :email, "Email" %></br>
+      <%= f.text_field :email, required: true, class: "contact-form-text-area"%></br>
+
+      <%= f.label "Message" %></br>
+      <%= f.text_area :message, rows: 8, required: true, class: "contact-form-text-area"%></br>
 
       <div class= "d-none">
         <%= f.label :nickname %>
         <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
       </div>
-
-      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+<br>
+      <%= f.submit 'ENVOYER', class: 'btn btn-primary' %>
     </div>
   <% end %>
 </div>
+
+
+

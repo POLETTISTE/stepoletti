@@ -1,4 +1,13 @@
+// Graphical variables
+
+// External libraries
+@import "font-awesome-sprockets";
+@import "font-awesome";
+// Your CSS partials
 @import "bootstrap/scss/bootstrap";
-@import "pages";
+@import "pages/index";
+@import "contacts/index";
+@import "components/index";
+
 
 //= require bootstrap/dist/css/bootstrap
