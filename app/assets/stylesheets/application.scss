@@ -9,5 +9,15 @@
 @import "contacts/index";
 @import "components/index";
 
-
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Montserrat:wght@300;400&display=swap');
 //= require bootstrap/dist/css/bootstrap
+
+//general
+
+body {
+
+margin: auto 2%;
+border-radius:16px;
+font-family: 'Montserrat', sans-serif;
+}

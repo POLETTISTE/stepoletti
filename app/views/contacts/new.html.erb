@@ -3,23 +3,23 @@
 
 <div class="container text-center p-3" id="newform">
     <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold my-4">Contactez moi</h2>
+    <h1 class="h1-responsive font-weight-bold my-4">CONTACT</h1>
     <!--Section description-->
     <p class="w-responsive mx-auto mb-5">Vous avez un projet, des questions? </p>
-     <p class="w-responsive mx-auto mb-5"> Contact par téléphone au 07 77 00 15 18 ou par formulaire de contact.
+     <p class="w-responsive mx-auto mb-5">Vous êtes au bon endroit !
 
   <%= form_for @contact do |f| %>
     <div class="col-md-12">
-      <%= f.label :name, "Nom" %></br>
+      <%= f.label :name, "NOM", class:"contact-form-label" %></br>
       <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
 
-      <%= f.label :firstname, "Prénom" %></br>
+      <%= f.label :firstname, "PRENOM", class:"contact-form-label"  %></br>
       <%= f.text_field  :firstname, required: true, class: "contact-form-text-area"%></br>
 
-      <%= f.label :email, "Email" %></br>
+      <%= f.label :email, "EMAIL", class:"contact-form-label"  %></br>
       <%= f.text_field :email, required: true, class: "contact-form-text-area"%></br>
 
-      <%= f.label "Message" %></br>
+      <%= f.label :message, "MESSAGE", class:"contact-form-label"  %></br>
       <%= f.text_area :message, rows: 8, required: true, class: "contact-form-text-area"%></br>
 
       <div class= "d-none">

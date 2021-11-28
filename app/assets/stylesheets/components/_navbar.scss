@@ -1,3 +1,8 @@
+nav {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+
+}
 
 .navbar-lewagon {
   justify-content: space-between;
@@ -17,6 +22,9 @@
 
 .nav-link {
   font-size: 24px;
+  &:hover{
+    border-bottom:8px solid rgb(25, 82, 196);
+  }
 }
 
 .avatar {
