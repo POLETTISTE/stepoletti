@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon align-middle mb-4 text-dark">
+<nav class="navbar navbar-expand-sm navbar-light navbar-lewagon align-middle mb-4 text-dark">
   <%= link_to "#", class: "navbar-brand" do %>
     <%= image_tag("https://res.cloudinary.com/polettiste/image/upload/v1637612453/cover_moy7ch.png", alt: "logo", width: 320, height: 80, crop: :fill) %>
   <% end %>
@@ -10,26 +10,26 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active  ">
+      <li class="nav-item active">
         <%= link_to "Accueil", root_path, class:"nav-link" %>
       </li>
       <li class="nav-item">
         <%= link_to "Contact", new_contact_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "A propos", about_path, class: "nav-link" %>
+        <%= link_to "CV", about_path, class: "nav-link" %>
       </li>
 
 
       <li class="nav-item dropdown">
-        <%= image_tag("https://res.cloudinary.com/polettiste/image/upload/v1637612453/profil_square_wjbdgh.jpg", alt: "logo", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false) %>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <%= link_to "Accueil", root_path, class: "dropdown-item" %>
           <%= link_to "Contact", new_contact_path, class: "dropdown-item" %>
           <%= link_to "Contact", about_path, class: "dropdown-item" %>
-
         </div>
       </li>
     </ul>
   </div>
-</div>
+</nav>
+
+
