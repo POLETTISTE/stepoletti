@@ -12,7 +12,7 @@ class Contact < MailForm::Base
   # in ActionMailer accepts.
   def headers
     {
-      subject: 'Contact Form Inquiry',
+      subject: 'Contact from stephanepoletti.com',
       to: 'polettiweb@gmail.com',
       from: %("#{name}" <#{email}>)
     }
