@@ -1,7 +1,18 @@
 <nav class="navbar navbar-expand-sm navbar-light navbar-lewagon align-middle mb-4 text-dark">
-  <%= link_to "#", class: "navbar-brand" do %>
+<!--   <%= link_to "#", class: "navbar-brand" do %>
     <%= image_tag("https://res.cloudinary.com/polettiste/image/upload/v1637612453/stephanepoletti/cover_moy7ch.png", alt: "logo", width: 160, height: 60, crop: :fill) %>
   <% end %>
+   -->
+  <video height="100" autoplay muted id="vid">
+
+    <source src="https://res.cloudinary.com/polettiste/video/upload/v1638306635/stephanepoletti/stephanepoletti.com_km8g4m.mp4"
+            type="video/mp4">
+
+    ...Vidéo non supportée par votre navigateur...
+</video>
+<script>
+    document.getElementById('vid').play();
+</script>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
