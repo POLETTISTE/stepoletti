@@ -1,26 +1,39 @@
 
-
-
-<div class="container text-center p-3" id="newform">
+<div id="newform">
     <!--Section heading-->
-    <h1 class="h1-responsive font-weight-bold my-4">CONTACT</h1>
+    <h1 class="center">Évaluons votre projet</h1>
     <!--Section description-->
-    <p class="w-responsive mx-auto mb-5">Vous avez un projet, des questions? </p>
-     <p class="w-responsive mx-auto mb-5">Vous êtes au bon endroit !
+    <p>Un projet de développement web nécessite d'être préparé : il est essentiel de se poser les bonnes questions dès le commencement, d'identifier les risques pour mieux les éviter, et d'élaborer une vision claire et exhaustive du projet pour favoriser sa réussite.</p>
+    <p>A la suite de votre message, vous obtiendrez des éléments concrets sur :
+      <ul>
+        <li>la faisabilité de votre projet</li>
+        <li>son niveau de complexité et de criticité</li>
+        <li>les étapes clés nécessaires pour le mener à bien</li>
+        <li>les points de vigilance à adresser</li>
+        <li>une échelle de temps et de budget pour sa réalisation</li>
+      </ul>
+    </p>
 
+
+    <div class="form">
   <%= form_for @contact do |f| %>
-    <div class="col-md-12">
-      <%= f.label :name, "NOM", class:"contact-form-label" %></br>
-      <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
 
-      <%= f.label :firstname, "PRENOM", class:"contact-form-label"  %></br>
-      <%= f.text_field  :firstname, required: true, class: "contact-form-text-area"%></br>
+      <p><%= f.label :firstname, "Prénom", class:"contact-form-label"  %><span class="red">*</span></p>
+      <p><%= f.text_field  :firstname, required: true, class: "contact-form-text-area"%></p>
+      <p><%= f.label :name, "Nom", class:"contact-form-label" %><span class="red">*</span></p>
+      <p><%= f.text_field  :name, required: true, class: "contact-form-text-area" %></p>
+      <p><%= f.label :company, "Nom de l'entreprise", class:"contact-form-label" %></p>
+      <p><%= f.text_field  :company, class: "contact-form-text-area" %></p>
 
-      <%= f.label :email, "EMAIL", class:"contact-form-label"  %></br>
-      <%= f.text_field :email, required: true, class: "contact-form-text-area"%></br>
 
-      <%= f.label :message, "MESSAGE", class:"contact-form-label"  %></br>
-      <%= f.text_area :message, rows: 8, required: true, class: "contact-form-text-area"%></br>
+      <p><%= f.label :email, "E-mail", class:"contact-form-label"  %><span class="red">*</span></p>
+      <p><%= f.text_field :email, required: true, class: "contact-form-text-area"%></p>
+
+      <p><%= f.label :telephone, "Numéro de téléphone", class:"contact-form-label"  %><span class="red">*</span></p>
+      <p><%= f.text_field :telephone, required: true, class: "contact-form-text-area"%></p>
+
+      <p><%= f.label :message, "Décrivez en quelques lignes votre projet et votre besoin", class:"contact-form-label"  %><span class="red">*</span></p>
+      <p><%= f.text_area :message, rows: 8, required: true, class: "contact-form-text-area"%></p>
 
       <div class= "d-none">
         <%= f.label :nickname %>
@@ -28,10 +41,12 @@
       </div>
       <br>
       <%= f.submit 'ENVOYER', class: 'btn btn-primary' %>
+      </div>
     </div>
+
   <% end %>
+<p class="center"> Stéphane Poletti - 83170 TOURVES - 07 77 00 15 18 - polettiweb@gmail.com</p>
 
 </div>
-
 
 

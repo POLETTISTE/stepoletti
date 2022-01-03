@@ -1,48 +1,28 @@
 
   <nav class="navbar navbar-expand-lg navbar-light">
 
-    <div id="logo" alt="logo">
-      <div class="navbar-brand">
-          <span>S</span>
-          <span>T</span>
-          <span>E</span>
-          <span>P</span>
-          <span>H</span>
-          <span>A</span>
-          <span>N</span>
-          <span>E</span>
-      </div>
-      <div class="navbar-brand">
-          <span>P</span>
-          <span>O</span>
-          <span>L</span>
-          <span>E</span>
-          <span>T</span>
-          <span>T</span>
-          <span>I</span>
-      </div>
-      <div class="navbar-brand">
-          <span>.</span>
-          <span>C</span>
-          <span>O</span>
-          <span>M</span>
-      </div>
+    <img src="https://res.cloudinary.com/polettiste/image/upload/v1641237137/stephanepoletti/logo_SP_stephane_poletti_jx4vxx.png" alt="logo" id="logo">
+
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <h6><%= link_to "ACCUEIL", root_path%></h6>
+        </li>
+        <li class="nav-item">
+          <h6><%= link_to "PORTFOLIO", portfolio_path%></h6>
+        </li>
+        <li class="nav-item">
+          <h6><%= link_to "ME CONTACTER", new_contact_path%></h6>
+        </li>
+
+      </ul>
     </div>
+
 
     <button class="navbar-toggler btn-nav" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <%= link_to "ACCUEIL", root_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "CONTACT", new_contact_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "PORTFOLIO", portfolio_path, class: "nav-link" %>
-        </li>
-      </ul>
-    </div>
+
   </nav>
+

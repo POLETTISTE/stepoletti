@@ -1,62 +1,43 @@
-#logo {
-  text-align:center;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-content:center;
-  width:170px;
-  height:170px;
-  border-radius:50%;
-  margin-bottom: 5px;
-  background-image:url('https://images.unsplash.com/photo-1636333825251-d921e6ff88e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80');
-  background-size:cover;
-}
-
 .navbar {
-  margin:20px 0;
+  position:sticky;
+  top:0;
+  margin:20px 0px;
   padding:10px;
+  display:flex;
   justify-content: space-between;
   width:100%;
-  height:auto;
+  height:120px;
   background-color: white;
-  opacity: 0.9;
-  border-radius: 8px;
-  z-index: inherit;
 }
 
-.navbar-brand {
-  width: auto;
-  margin:0;
-  padding:0;
-  text-align: center;
-  span {
-    -webkit-text-stroke-width: 1.25px;
-    -webkit-text-stroke-color: #32F9A5;
-    font-size: 20px;
-    text-shadow: 0 0px #f3c623, 0 0px #f2aaaa;
-    transform: translate(0, 100%) rotate(15deg);
-    animation: jump 2s ease-in-out infinite;
-    display: inline-block;
-    font-family: 'Shizuru', cursive;
-    color: #32F9A5;
+#navbarNavDropdown {
+  flex-grow:0;
+  width: 100%;
+  justify-content:space-around;
 
-    @for $i from 1 through 19 {
-      &:nth-child(#{$i}) {
-        animation-delay: 120ms * $i;
-      }
-    }
+}
+
+.navbar-collapse li{
+  margin:auto 40px;
+}
+
+.navbar-collapse li a {
+  font-weight:bold;
+  color:#5B5B5B;
+  text-decoration: none;
+  &:visited{
+    color:#5B5B5B;
+  }
+  &:active{
+  font-weight: bold;
+  border-bottom: 3px solid #5B5B5B;
+  padding-bottom: 2px;
+
   }
 }
 
-
-.navbar-collapse {
-  flex-grow: 0;
+#logo {
+width:auto;
+height: 119px;
+color:red;
 }
-
-
- a:active {
-  font-weight: bold;
-  border-bottom: 3px solid black;
-  padding-bottom: 2px;
-}
-

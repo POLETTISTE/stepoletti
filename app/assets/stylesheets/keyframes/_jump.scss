@@ -1,12 +1,70 @@
-@keyframes jump {
-  33% {
-    text-shadow: 0 22px #f37121, 0 5px #f2aaaa;
-  }
-  50% {
-    transform: translate(0, 0) rotate(-4deg);
-    text-shadow: 0 0px #8fc0a9, 0 0px #84a9ac;
-  }
-  66.67% {
-    text-shadow: 0 -15px #d54062, 0 -5px #8fc0a9;
-  }
-}
+// @keyframes jump {
+//   33% {
+//     text-shadow: 0 22px #f37121, 0 5px #f2aaaa;
+//   }
+//   50% {
+//     transform: translate(0, 0) rotate(-4deg);
+//     text-shadow: 0 0px #8fc0a9, 0 0px #84a9ac;
+//   }
+//   66.67% {
+//     text-shadow: 0 -15px #d54062, 0 -5px #8fc0a9;
+//   }
+// }
+
+
+
+
+
+
+// .class{
+//   width: auto;
+//   margin:0;
+//   padding:0;
+//   text-align: center;
+//   span {
+//     -webkit-text-stroke-width: 1px;
+//     -webkit-text-stroke-color: #32F9A5;
+//     font-size: 10px;
+//     font-weight: bold;
+//     text-shadow: 0 0px #f3c623, 0 0px #f2aaaa;
+//     transform: translate(0, 100%) rotate(15deg);
+//     animation: jump 2s ease-in-out infinite;
+//     display: inline-block;
+//     font-family: 'Shizuru', cursive;
+//     color: #32F9A5;
+
+//     @for $i from 1 through 19 {
+//       &:nth-child(#{$i}) {
+//         animation-delay: 120ms * $i;
+//       }
+//     }
+//   }
+// }
+
+
+
+      // <div class="navbar-brand">
+      //     <span>S</span>
+      //     <span>T</span>
+      //     <span>E</span>
+      //     <span>P</span>
+      //     <span>H</span>
+      //     <span>A</span>
+      //     <span>N</span>
+      //     <span>E</span>
+      // </div>
+      // <div class="navbar-brand">
+      //     <span>P</span>
+      //     <span>O</span>
+      //     <span>L</span>
+      //     <span>E</span>
+      //     <span>T</span>
+      //     <span>T</span>
+      //     <span>I</span>
+      // </div>
+      // <div class="navbar-brand">
+      //     <span>.</span>
+      //     <span>C</span>
+      //     <span>O</span>
+      //     <span>M</span>
+      // </div>
