@@ -1,19 +1,9 @@
-.contactlink {
-  color:black;
-  text-decoration: none;
-  border: 1px solid grey;
-  background-color: lightyellow;
-  border-radius: 16px;
-  padding:10px 30px;
-  &:hover{
-    background-color:rgba(222, 232, 253,0.9);
-  }
-  &:visited{
-    color:black;
-  }
-}
-
-.construction {
-  max-width: 100%;
-  height: auto;
+.main-page {
+    height:230px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(90,23,34,0.9)
 }

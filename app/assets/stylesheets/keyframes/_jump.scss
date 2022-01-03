@@ -1,0 +1,12 @@
+@keyframes jump {
+  33% {
+    text-shadow: 0 22px #f37121, 0 5px #f2aaaa;
+  }
+  50% {
+    transform: translate(0, 0) rotate(-4deg);
+    text-shadow: 0 0px #8fc0a9, 0 0px #84a9ac;
+  }
+  66.67% {
+    text-shadow: 0 -15px #d54062, 0 -5px #8fc0a9;
+  }
+}
