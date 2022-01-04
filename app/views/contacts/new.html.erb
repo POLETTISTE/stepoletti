@@ -18,23 +18,21 @@
     <div class="form">
   <%= form_for @contact do |f| %>
 
-      <p><%= f.label :firstname, "Prénom", class:"contact-form-label"  %><span class="red">*</span></p>
-      <p><%= f.text_field  :firstname, required: true, class: "contact-form-text-area"%></p>
-      <p><%= f.label :name, "Nom", class:"contact-form-label" %><span class="red">*</span></p>
-      <p><%= f.text_field  :name, required: true, class: "contact-form-text-area" %></p>
+      <p><%= f.label :firstname, "Prénom", class:"contact-form-label"  %><span class="red"> *</span></p>
+      <p><%= f.text_field  :firstname, required: true, class: "contact-form-text-field"%></p>
+      <p><%= f.label :name, "Nom", class:"contact-form-label" %><span class="red"> *</span></p>
+      <p><%= f.text_field  :name, required: true, class: "contact-form-text-field" %></p>
       <p><%= f.label :company, "Nom de l'entreprise", class:"contact-form-label" %></p>
-      <p><%= f.text_field  :company, class: "contact-form-text-area" %></p>
-
-
-      <p><%= f.label :email, "E-mail", class:"contact-form-label"  %><span class="red">*</span></p>
-      <p><%= f.text_field :email, required: true, class: "contact-form-text-area"%></p>
-
-      <p><%= f.label :telephone, "Numéro de téléphone", class:"contact-form-label"  %><span class="red">*</span></p>
-      <p><%= f.text_field :telephone, required: true, class: "contact-form-text-area"%></p>
-
-      <p><%= f.label :message, "Décrivez en quelques lignes votre projet et votre besoin", class:"contact-form-label"  %><span class="red">*</span></p>
+      <p><%= f.text_field  :company, class: "contact-form-text-field" %></p>
+      <p><%= f.label :email, "E-mail", class:"contact-form-label"  %><span class="red"> *</span></p>
+      <p><%= f.email_field :email, required: true, class: "contact-form-email-field"%></p>
+      <p><%= f.label :telephone, "Numéro de téléphone", class:"contact-form-label"  %><span class="red"> *</span></p>
+      <p><%= f.number_field :telephone, required: true, class: "contact-form-number-field"%></p>
+      <p><%= f.label :budget, "Votre budget (€)", class:"contact-form-label"  %>
+      <p><%= f.number_field :budget, required: false, class: "contact-form-number-field" %></p>
+      <p><%= f.label :message, "Décrivez en quelques lignes votre projet et votre besoin", class:"contact-form-label"  %><span class="red"> *</span></p>
       <p><%= f.text_area :message, rows: 8, required: true, :minlength => 30, class: "contact-form-text-area"%></p>
-
+      <p><span class="red"> * champs obligatoires</span></p></p>
       <div class= "d-none">
         <%= f.label :nickname %>
         <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>

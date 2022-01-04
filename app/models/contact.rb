@@ -2,13 +2,13 @@
 
 class Contact < MailForm::Base
 
-  attribute :name,     validate: true
+  attribute :name, validate: true
   attribute :firstname
   attribute :company
   attribute :email,     validate: /\A([\w.%+\-]+)@([\w\-]+\.)+(\w{2,})\z/i
   attribute :telephone, validate: true
   attribute :message, validate: true
-  attribute :message, length: { minimum: 40 }
+  attribute :budget
   attribute :nickname, captcha: true
 
   # Declare the e-mail headers. It accepts anything the mail method
