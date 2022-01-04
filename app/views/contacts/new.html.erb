@@ -33,7 +33,7 @@
       <p><%= f.text_field :telephone, required: true, class: "contact-form-text-area"%></p>
 
       <p><%= f.label :message, "Décrivez en quelques lignes votre projet et votre besoin", class:"contact-form-label"  %><span class="red">*</span></p>
-      <p><%= f.text_area :message, rows: 8, required: true, class: "contact-form-text-area"%></p>
+      <p><%= f.text_area :message, rows: 8, required: true, :minlength => 30, class: "contact-form-text-area"%></p>
 
       <div class= "d-none">
         <%= f.label :nickname %>
