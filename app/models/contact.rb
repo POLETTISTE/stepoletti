@@ -3,7 +3,7 @@
 class Contact < MailForm::Base
 
   attribute :name, validate: true
-  attribute :firstname
+  attribute :firstname, validate: true
   attribute :company
   attribute :email,     validate: /\A([\w.%+\-]+)@([\w\-]+\.)+(\w{2,})\z/i
   attribute :telephone, validate: true
