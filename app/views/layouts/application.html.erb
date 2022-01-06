@@ -16,16 +16,14 @@
   <body>
    <%=  render "shared/navbar" %>
 
-
-    <div class="container">
-      <br>
-      <% flash.each do |key, message| %>
-        <div class="message-sent">
-          <div class="message-sent-1"><%= message %></div>
-          <div class='message-sent-2'> <%= link_to "X", root_path %></div>
-        </div>
-      <% end %>
-    </div>
+        <% flash.each do |key, message| %>
+      <div class="form-create">
+          <div class="message-sent">
+            <div class="message-sent-1"><%= message %></div>
+            <div class='message-sent-2'> <%= link_to "X", root_path %></div>
+          </div>
+      </div>
+        <% end %>
 
     <%= yield %>
 
