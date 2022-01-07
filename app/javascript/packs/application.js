@@ -14,3 +14,5 @@ ActiveStorage.start()
 
 window.$ = window.jQuery = require("jquery");
 import "bootstrap/dist/js/bootstrap.bundle.js"
+
+require("custom/main")
