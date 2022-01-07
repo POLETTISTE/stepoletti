@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class Contact < MailForm::Base
-
   attribute :name, validate: true
   attribute :firstname, validate: true
   attribute :company
