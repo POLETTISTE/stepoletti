@@ -1,16 +1,5 @@
-.construction{
-  background-image: url('https://res.cloudinary.com/polettiste/image/upload/v1641478661/stephanepoletti/construction-bg_olvajz.jpg');
-  background-repeat: no-repeat;
-  background-size:cover;
-  min-width: 100%;
+.header-top{
+ width: 100%;
+ height: auto;
+ z-index:1;
 }
-
-.construction_site {
-  width:50vh;
-  height:800px;
-  text-align:center;
-  margin:auto;
-  display:flex;
-  z-index: 1;
-  flex-grow:1;
-  }
