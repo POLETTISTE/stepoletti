@@ -22,6 +22,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 gem 'cloudinary', '~> 1.16.0'
+gem 'lorem_ipsum_amet', '~> 0.6.2'
 gem 'dotenv-rails', groups: %i[development test]
 
 # Use Active Model has_secure_password
@@ -36,7 +37,6 @@ gem 'simple_form'
 gem 'mail_form'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

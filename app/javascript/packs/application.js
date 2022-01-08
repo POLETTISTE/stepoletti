@@ -16,3 +16,11 @@ window.$ = window.jQuery = require("jquery");
 import "bootstrap/dist/js/bootstrap.bundle.js"
 
 require("custom/main")
+
+
+import { initUpdateNavbarOnScroll } from '../components/navbar';
+
+document.addEventListener('turbolinks:load', () => {
+  // Call your JS functions here
+  initUpdateNavbarOnScroll();
+});

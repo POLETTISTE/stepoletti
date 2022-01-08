@@ -112,6 +112,7 @@ GEM
     loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
+    lorem_ipsum_amet (0.6.2)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     mail_form (1.9.0)
@@ -254,6 +255,7 @@ DEPENDENCIES
   font-awesome-sass (~> 5.6.1)
   jbuilder (~> 2.7)
   listen (~> 3.3)
+  lorem_ipsum_amet (~> 0.6.2)
   mail_form
   pg (~> 1.1)
   puma (~> 5.0)
