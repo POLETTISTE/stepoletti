@@ -1,9 +1,9 @@
 .home-banner {
   background-image: url('https://res.cloudinary.com/polettiste/image/upload/v1641543178/stephanepoletti/header_uifmf5.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width:auto;
-  height:1000px;
+  background-position: center center;
+  height:60vh;
   color: #eee;
   text-align: center;
 }
