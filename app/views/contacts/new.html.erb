@@ -1,10 +1,12 @@
 
 <div id="newform">
-
-    <p>Évaluons votre projet</p>
-
-    <p>Un projet de développement web nécessite d'être préparé : il est essentiel de se poser les bonnes questions dès le commencement, d'identifier les risques pour mieux les éviter, et d'élaborer une vision claire et exhaustive du projet pour favoriser sa réussite.</p>
-    <p>A la suite de votre message, vous obtiendrez des éléments concrets sur :
+  <div class="form-intro">
+    <h1 class="text-center">ÉVALUONS VOTRE PROJET</h1>
+    <p>Un projet de développement web nécessite d'être préparé : il est essentiel
+     de se poser les bonnes questions dès le commencement,d'identifier les risques
+      pour mieux les éviter, et d'élaborer une vision claire et exhaustive du projet
+      pour favoriser sa réussite. A la suite de votre message, vous obtiendrez des
+      éléments concrets sur :
       <ul>
         <li>la faisabilité de votre projet</li>
         <li>son niveau de complexité et de criticité</li>
@@ -13,40 +15,36 @@
         <li>une échelle de temps et de budget pour sa réalisation</li>
       </ul>
     </p>
-
+  </div>
 
     <div class="form">
-      <%= form_for @contact do |f| %>
 
-      <p><%= f.label :name, "Nom", class:"contact-form-label" %><span class="red"> *</span></p>
-      <p><%= f.text_field  :name, required: true, class: "contact-form-text-field" %></p>
-      <p><%= f.label :firstname, "Prénom", class:"contact-form-label"  %><span class="red"> *</span></p>
-      <p><%= f.text_field  :firstname, required: true, class: "contact-form-text-field"%></p>
-      <p><%= f.label :company, "Nom de l'entreprise", class:"contact-form-label" %></p>
-      <p><%= f.text_field  :company, class: "contact-form-text-field" %></p>
-      <p><%= f.label :email, "E-mail", class:"contact-form-label"  %><span class="red"> *</span></p>
-      <p><%= f.email_field :email, required: true, class: "contact-form-email-field"%></p>
-      <p><%= f.label :telephone, "Numéro de téléphone", class:"contact-form-label"  %><span class="red"> *</span></p>
-      <p><%= f.text_field :telephone, required: true, class: "contact-form-number-field"%></p>
-      <p><%= f.label :budget, "Votre budget (€)", class:"contact-form-label"  %>
-      <p><%= f.text_field :budget, required: false, class: "contact-form-number-field" %></p>
-      <p><%= f.label :message, "Décrivez en quelques lignes votre projet et votre besoin", class:"contact-form-label"  %><span class="red"> *</span></p>
-      <p><%= f.text_area :message, rows: 8, required: true, :minlength => 30, class: "contact-form-text-area"%></p>
-      <p><span class="red"> * champs obligatoires</span></p></p>
+      <h2>FORMULAIRE DE CONTACT</h2>
+      <%= form_for @contact do |f| %>
+      <p><%= f.text_field  :name, required: true, placeholder: "Nom", class: "contact-form-text-field" %></p>
+      <p><%= f.text_field  :firstname, required: true, placeholder: "Prénom",  class: "contact-form-text-field"%></p>
+      <p><%= f.text_field  :company,  placeholder: "Nom de l'entreprise", class: "contact-form-text-field" %></p>
+      <p><%= f.email_field :email, required: true,  placeholder: "E-mail", class: "contact-form-email-field"%></p>
+      <p><%= f.text_field :telephone, required: true,  placeholder: "Téléphone", class: "contact-form-number-field"%></p>
+      <p><%= f.text_field :budget, required: false,  placeholder: "Votre budget", class: "contact-form-text-field" %></p>
+      <p><%= f.text_area :message, rows: 8, required: true,  placeholder: "Décrivez en quelques lignes votre projet et votre besoin", :minlength => 30, class: "contact-form-text-area"%></p>
 
       <div class= "d-none">
-        <%= f.label :nickname %>
-        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+        <p><%= f.label :nickname %></p>
+        <p><%= f.text_field :nickname, :hint => 'Leave this field blank!' %></p>
       </div>
-        <%= f.submit 'ENVOYER', class: 'btn btn-primary' %>
+
+        <p><%= f.submit 'ENVOYER', class: 'btn btn-send' %></p>
       <% end %>
     </div>
-</div>
 
-<h6> Stéphane Poletti</h6>
-<h6>83170 TOURVES</h6>
-<h6>07 77 00 15 18</h6>
-<h6>contact@stephanepoletti.com</h6>
+    <div class="my-infos text-center">
+      <p> Stéphane Poletti</p>
+      <p>83170 TOURVES</p>
+      <p>07 77 00 15 18</p>
+      <p>contact@stephanepoletti.com</p>
+    </div>
+</div>
 
 
 
