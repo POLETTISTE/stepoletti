@@ -23,11 +23,10 @@
       <%= form_for @contact do |f| %>
       <p><%= f.text_field  :name, required: true, placeholder: "Nom", class: "contact-form-text-field" %></p>
       <p><%= f.text_field  :firstname, required: true, placeholder: "Prénom",  class: "contact-form-text-field"%></p>
-      <p><%= f.text_field  :company,  placeholder: "Nom de l'entreprise", class: "contact-form-text-field" %></p>
+      <p><%= f.text_field  :company,  placeholder: "Nom de l'entreprise (facultatif)", class: "contact-form-text-field" %></p>
       <p><%= f.email_field :email, required: true,  placeholder: "E-mail", class: "contact-form-email-field"%></p>
       <p><%= f.text_field :telephone, required: true,  placeholder: "Téléphone", class: "contact-form-number-field"%></p>
-      <p><%= f.text_field :budget, required: false,  placeholder: "Votre budget", class: "contact-form-text-field" %></p>
-      <p><%= f.text_area :message, rows: 8, required: true,  placeholder: "Décrivez en quelques lignes votre projet et votre besoin", :minlength => 30, class: "contact-form-text-area"%></p>
+      <p><%= f.text_area :message, rows: 8, required: true,  placeholder: "Décrivez votre demande / votre projet (30 caractères minimum)", :minlength => 30, class: "contact-form-text-area"%></p>
 
       <div class= "d-none">
         <p><%= f.label :nickname %></p>
