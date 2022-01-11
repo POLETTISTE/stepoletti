@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Contacts
 class ContactsController < ApplicationController
   def new
     @contact = Contact.new

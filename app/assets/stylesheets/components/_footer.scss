@@ -1,81 +1,74 @@
+
 .footer {
-  background-color: #CCCCCC;
-  height: 20vh;
-  text-align: center;
   display:flex;
-  justify-content:flex-start;
-  padding:10px;
-  flex-grow:1;
+  flex-direction:column;
+  background-color: #CCCCCC;
+}
+
+.footer .links{
 
 }
 
-.social-links {
-  display: flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  flex-grow:1;
+.social-links{
+  display:flex;
+  justify-content:space-around;
+  padding-top:3vh;
+  padding-bottom:2vh;
+  width:70%;
+  margin: 0 auto;
 }
 
 .social-links img{
-  width: 5vh;
-  margin:0.5vh
-}
-
-.social-links-top {
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  width: 6vh;
 }
 
 .footer-links{
-  display:flex;
-  flex-grow:3;
-
-}
-
-.footer-foot {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:flex-start;
-  flex-grow:3;
-  & h6,p{
-  margin-bottom: 2vh;
-  }
-
-}
-
-.footer-foot a, .footer-foot p a {
-  text-align:center;
-  margin:0 auto;
-  font-family: 'Lato', sans-serif;
-  font-size:2.8vh;
-  color:rgba(0,0,0,0.87);
-  text-decoration: none;
-  &:hover{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom:2vh;
+  margin: 0 auto;
+  font-size:14px;
+  color: black;
+  & a:hover{
     font-weight: 700;
-    color:black;
-    border-bottom: 3px solid black;
+  }
+  & a:visited{
+    color: black;
   }
 }
 
-.footer-foot p a {
-  font-size:2vh;
-  &:hover{
-    font-weight:400;
-    color:black;
-    border-bottom: 1px solid black;
-  }
+.footer .copyright {
+  font-size: 12px;
+  text-align:center;
+  margin-bottom: 0;
 }
 
-.footer-foot.legal{
-  display:flex;
-  justify-content:center;
-  align-self:center;
-  & p{
+// Mobile devices
+@media screen and (min-width: 320px) and (max-width: 576px) {
 
-  margin:0;
-  }
 }
+
+// iPads, Tablets
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+
+}
+
+//Small screens, laptops
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+
+}
+
+//Desktops, large screens
+@media screen and (min-width: 993px){
+
+}
+
+
+//Extra large screens, TV
+// @media screen and (min-width: 1201px) {
+
+// }
+
 
