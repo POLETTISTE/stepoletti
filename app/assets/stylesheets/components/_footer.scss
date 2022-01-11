@@ -29,6 +29,9 @@
   margin: 0 auto;
   font-size:14px;
   color: black;
+  & a {
+    text-decoration: none;
+  }
   & a:hover{
     font-weight: 700;
   }
