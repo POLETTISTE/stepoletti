@@ -29,6 +29,14 @@ body {
 
 a {
   text-decoration:none;
+  color:black;
+    &:hover{
+    font-weight: 700;
+    color:black;
+  }
+  &:visited{
+    color: black;
+  }
 }
 
 .red{
