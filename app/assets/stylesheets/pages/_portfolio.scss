@@ -2,20 +2,21 @@
   background-color:black;
   padding-top: 3vh;
   padding-bottom: 3vh;
+  color:white;
 }
 
-
-
 .img-fluid {
-  width:60vh;
+  width:30vh;
+  border-radius:2rem;
+  &:hover{
+    border:yellow 0.5rem solid;
+    width:30.5vh;
+  }
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  background-color: black;
-  color: white;
-  border-radius: 50%;
   height:40px;
-  width:40px
+  width:40px;
 }
 
 .flicker{
@@ -33,17 +34,17 @@
   animation: flicker 2.5s infinite alternate;
 }
 
-.h2::-moz-selection {
+.h1::-moz-selection {
   background-color: var(--neon-border-color);
   color: var(--neon-text-color);
 }
 
-.h2::selection {
+.h1::selection {
   background-color: var(--neon-border-color);
   color: var(--neon-text-color);
 }
 
-.h2:focus {
+.h1:focus {
   outline: none;
 }
 
