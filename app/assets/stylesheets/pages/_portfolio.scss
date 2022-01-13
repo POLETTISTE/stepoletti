@@ -1,11 +1,12 @@
 #page-top{
   background-color:black;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   color:white;
 }
 
 .img-fluid {
+  margin:3vh auto;
   width:30vh;
   border-radius:2rem;
   border:#DFF600 0.5rem solid;
@@ -22,11 +23,11 @@
 .flicker{
   font-size:24px;
   font-weight: 200;
+  text-align:center;
   font-style: italic;
   color: #fff;
   width:200px;
-  padding:3vh;
-  margin:0 auto;
+  margin:3vh auto;
   margin-bottom: 2vh;
   border: 0.4rem solid #fff;
   border-radius: 2rem;
