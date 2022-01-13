@@ -8,9 +8,9 @@
 .img-fluid {
   width:30vh;
   border-radius:2rem;
-  &:hover{
-    border:yellow 0.5rem solid;
-    width:30.5vh;
+  border:#DFF600 0.5rem solid;
+  &:hover, :focus{
+    border:#08F74D 0.5rem solid;
   }
 }
 
