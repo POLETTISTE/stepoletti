@@ -5,30 +5,15 @@
   color:white;
 }
 
-.img-fluid {
-  margin:3vh auto;
-  width:30vh;
-  border-radius:2rem;
-  border:#DFF600 0.5rem solid;
-  &:hover, :focus{
-    border:#08F74D 0.5rem solid;
-  }
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  height:40px;
-  width:40px;
-}
-
 .flicker{
-  font-size:24px;
+  font-size:30px;
   font-weight: 200;
   text-align:center;
   font-style: italic;
   color: #fff;
-  width:200px;
+  width:240px;
   margin:3vh auto;
-  margin-bottom: 2vh;
+  margin-bottom: 5vh;
   border: 0.4rem solid #fff;
   border-radius: 2rem;
   text-transform: uppercase;
@@ -85,7 +70,25 @@
   --neon-text-color: #111;
   --neon-border-color: #38F614;
   }
+.img-fluid {
+  margin:3vh auto;
+  width:35vh;
+  height:50vh;
+  border-radius:2rem;
+  border:#DFF600 0.5rem solid;
+  &:hover, :focus{
+    border:#08F74D 0.5rem solid;
+  }
+}
 
-#portfolioModal1 > div > div > div > div > div > div > button > span > a{
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height:40px;
+  width:40px;
+}
+
+
+#portfolioModal1 > div > div > div > div > div > div > button > span > a
+#portfolioModal2 > div > div > div > div > div > div > button > span > a{
   color:white;
 }
+
