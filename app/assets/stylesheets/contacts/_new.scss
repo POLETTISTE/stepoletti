@@ -218,15 +218,6 @@
     box-shadow: 78vmin 0 9.98205326740926vmin currentColor;
 }
 
-
-
-
-
-
-
-
-
-
 #newform{
   z-index:1;
   padding:10vh 0;
@@ -253,6 +244,13 @@
   & p, h2 {
     color:white;
   }
+  & input[type="text"], input[type="text"],
+    input[type="email"], input[type="email"],
+    textarea, textarea
+      {
+      border: 2px solid transparent;
+      outline:none;
+    }
   & input[type="text"]:hover, input[type="text"]:focus:hover,
     input[type="email"]:hover, input[type="email"]:focus:hover,
     textarea:hover, textarea:focus:hover
@@ -299,5 +297,9 @@
 @media screen and (min-width: 577px) {
   .form {
     width:60%;
+  }
+  .contact-form-text-field, .contact-form-number-field, .contact-form-email-field, .contact-form-text-area {
+  width: 70%;
+  border-radius:8px;
   }
 }
