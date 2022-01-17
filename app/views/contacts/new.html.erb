@@ -1,25 +1,30 @@
-
+<div class="background">
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+</div>
 <div id="newform">
-  <div class="form-intro">
-    <h1 class="text-center">ÉVALUONS VOTRE PROJET</h1>
-    <p>Un projet de développement web nécessite d'être préparé : il est essentiel
-     de se poser les bonnes questions dès le commencement,d'identifier les risques
-      pour mieux les éviter, et d'élaborer une vision claire et exhaustive du projet
-      pour favoriser sa réussite. A la suite de votre message, vous obtiendrez des
-      éléments concrets sur :
-      <ul>
-        <li>la faisabilité de votre projet</li>
-        <li>son niveau de complexité et de criticité</li>
-        <li>les étapes clés nécessaires pour le mener à bien</li>
-        <li>les points de vigilance à adresser</li>
-        <li>une échelle de temps et de budget pour sa réalisation</li>
-      </ul>
-    </p>
-  </div>
-
     <div class="form">
 
-      <h2>FORMULAIRE DE CONTACT</h2>
+      <h1>FORMULAIRE DE CONTACT</h1>
       <%= form_for @contact do |f| %>
       <p><%= f.text_field  :name, required: true, placeholder: "Nom", class: "contact-form-text-field" %></p>
       <p><%= f.text_field  :firstname, required: true, placeholder: "Prénom",  class: "contact-form-text-field"%></p>
@@ -37,12 +42,6 @@
       <% end %>
     </div>
 
-    <div class="my-infos text-center">
-      <h3> Stéphane Poletti</h3>
-      <p><a href="tel:+33777001518"> 📱 07 77 00 15 18</a></p>
-      <p><a href="mailto:contact@stephanepoletti.com?subject=FORMULAIRE DE CONTACT via stephanepoletti.com&amp; link" target = "_ blank">✉️ contact@stephanepoletti.com</a></p>
-      <p><a href="https://www.google.com/maps/@43.416981,5.9545158,11.89z" target = "_ blank">📍 TOURVES (83) - France</a></p>
-    </div>
 </div>
 
 
