@@ -22,9 +22,47 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color:transparent;
+  text-align:left;
+  font-size:18px;
+}
+h1{
+    font-size:35px;
+}
+
+h2{
+    font-size:25px;
 
 }
 
+h3{
+    font-size:22px;
+
+}
+
+h4{
+    font-size:20px;
+
+}
+
+h5{
+    font-size:19px;
+
+}
+
+h6{
+    font-size:18px;
+
+}
+
+p{
+  font-size:18px;
+}
+
+li {
+  list-style-type: square;
+  font-size:18px;
+
+}
 a {
   text-decoration:none;
   color:black;
@@ -37,13 +75,4 @@ a {
   }
 }
 
-.red{
-  color:red;
-}
-li {
-  list-style-type: square;
-}
 
-p {
-  font-size: 12px;
-}

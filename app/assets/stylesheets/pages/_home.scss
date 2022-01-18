@@ -9,9 +9,6 @@
   padding-top:2vh;
   animation: icc 10s;
   animation-iteration-count: infinite;
-  & h1 {
-    font-size:4.5vh;
-  }
 }
 
 @keyframes icc{
@@ -27,8 +24,24 @@
 }
 
 #banner-typed-text {
-  font-size:3vh;
+  font-size:20px;
   font-style: italic;
 }
 
+.section-home{
+  margin:30px;
+}
 
+.icones{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  text-align: center;
+}
+
+.icones-techno{
+  width:30vh;
+  height:auto;
+  margin:4vh;
+  border-radius: 50%;
+}
