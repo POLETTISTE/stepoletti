@@ -29,38 +29,125 @@
 }
 
 .section-home{
-  margin:30px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin:auto;
   line-height: 1.75;
+  text-align:center;
+  width:95%;
   & strong{
     font-weight: normal;
   }
+  & li{
+    list-style-type: none;
+    text-align:center;
+  }
+  & div{
+    display:inline-block;
+  }
 }
 
-.bienvenue{
-  margin-bottom: 4vh;
-  font-weight:600;
+#poletti{
+  width:200px;
+  height:auto;
+  margin:auto;
+  border-radius:50%;
+  margin: 4vh auto;
 }
 
 .relief-green {
+  display:inline-block;
+  width:90%;
+  margin:3vh auto;
   border: 1px solid transparent;
+  border-radius:16px;
   padding:0.3em;
-  background-color: #E6FFF7;
-  color:#51D6AE;
+  background-color: #E4FFF4;
+  color:#33D792;
   font-weight:900;
   font-size:1.375em;
   vertical-align: baseline;
 }
+
+.relief-red {
+  display:inline-block;
+  width:90%;
+  margin:3vh auto;
+  border: 1px solid transparent;
+  border-radius:16px;
+  padding:0.3em;
+  background-color: #FEE0E0;
+  color:#FD0F13;
+  font-weight:900;
+  font-size:1.375em;
+  vertical-align: baseline;
+}
+
+.relief-violet {
+  display:inline-block;
+  width:90%;
+  margin:3vh auto;
+  border: 1px solid transparent;
+  border-radius:16px;
+  padding:0.3em;
+  background-color: #EBEAFE;
+  color:#7D74FE;
+  font-weight:900;
+  font-size:1.375em;
+  vertical-align: baseline;
+}
+
+.relief-yellow {
+  display:inline-block;
+  width:90%;
+  margin:3vh auto;
+  border: 1px solid transparent;
+  border-radius:16px;
+  padding:0.3em;
+  background-color: #FCF8EA;
+  color:#FEC661;
+  font-weight:900;
+  font-size:1.375em;
+  vertical-align: baseline;
+}
+
+.relief-blue {
+  display:inline-block;
+  width:90%;
+  margin:3vh auto;
+  border: 1px solid transparent;
+  border-radius:16px;
+  padding:0.3em;
+  background-color: #E9F9FB;
+  color:#67DAFA;
+  font-weight:900;
+  font-size:1.375em;
+  vertical-align: baseline;
+}
+
 
 .icones{
   display: flex;
   flex-wrap:wrap;
   justify-content:center;
   text-align: center;
+  margin-bottom:10vh;
 }
 
-.icones-techno{
+.icones-techno, .chrono{
   width:15.5vh;
   height:auto;
   margin:3vh;
   border-radius: 50%;
 }
+
+.contacter {
+  border: 2px solid #67DAFA;
+  border-radius:16px;
+  padding:0.3em;
+  background-color: #E9F9FB;
+
+}
+
