@@ -13,29 +13,28 @@
 
 
 //Fonts
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Luxurious+Roman&family=Montserrat&display=swap');
-// = require bootstrap/dist/css/bootstrap
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Luxurious+Roman&family=Montserrat&family=Rubik:ital,wght@0,400;0,600;0,700;1,400&display=swap');// = require bootstrap/dist/css/bootstrap
 
 //general
 
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rubik', sans-serif;
   background-color:transparent;
-  text-align:left;
-  font-size:18px;
+  text-align:center;
+  font-size:20px;
 }
 h1{
-    font-size:35px;
+    font-size:40px;
 }
 
 h2{
-    font-size:25px;
+    font-size:30px;
 
 }
 
 h3{
-    font-size:22px;
+    font-size:24px;
 
 }
 
@@ -45,22 +44,22 @@ h4{
 }
 
 h5{
-    font-size:19px;
-
-}
-
-h6{
     font-size:18px;
 
 }
 
+h6{
+    font-size:16px;
+
+}
+
 p{
-  font-size:18px;
+  font-size:20px;
 }
 
 li {
   list-style-type: square;
-  font-size:18px;
+  font-size:20px;
 
 }
 a {
