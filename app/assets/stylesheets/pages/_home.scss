@@ -44,17 +44,25 @@
     list-style-type: none;
     text-align:center;
   }
-  & div{
-    display:inline-block;
-  }
+}
+
+.section-top{
+  background-color:#EBEAFE;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  margin-top: 5vh;
+  margin-bottom:10vh;
+  padding:5vh;
+  border-radius:16px;
 }
 
 #poletti{
   width:200px;
   height:auto;
-  margin:auto;
   border-radius:50%;
-  margin: 4vh auto;
+  margin: 3vh auto;
 }
 
 .relief-green {
@@ -148,6 +156,10 @@
   border-radius:16px;
   padding:0.3em;
   background-color: #E9F9FB;
+}
+
+.chrono{
+  margin-bottom:25vh;
 }
 
 .carte-visite{
