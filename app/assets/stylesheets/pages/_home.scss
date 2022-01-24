@@ -12,7 +12,7 @@
   & h1{
 
   font-family: 'Source Code Pro', monospace;
-  font-size:50px;
+  font-size:32px;
   }
 
 }
@@ -30,7 +30,7 @@
 }
 
 #banner-typed-text {
-  font-size:20px;
+  font-size:19px;
   font-style: italic;
   font-family: 'Mochiy Pop P One', sans-serif;
 }
@@ -163,6 +163,10 @@
   background-color:#FEC661;
   width:80%;
   border-radius:16px;
+  & div h2 {
+    font-size:30px;
+    font-weight:bold;
+  }
 }
 
 .contacter {
