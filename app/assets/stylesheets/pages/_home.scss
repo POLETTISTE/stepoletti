@@ -1,199 +1,197 @@
 .home-banner {
-  background-image: url('https://res.cloudinary.com/polettiste/image/upload/v1641543178/stephanepoletti/header_uifmf5.jpg');
+  background-image: url("https://res.cloudinary.com/polettiste/image/upload/v1641543178/stephanepoletti/header_uifmf5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height:120vh;
+  height: 120vh;
   color: #eee;
   text-align: center;
-  padding-top:2vh;
+  padding-top: 2vh;
   animation: icc 10s;
   animation-iteration-count: infinite;
-  & h1{
-
-  font-family: 'Source Code Pro', monospace;
-  font-size:32px;
+  & h1 {
+    font-family: "Source Code Pro", monospace;
+    font-size: 32px;
   }
-
 }
 
-@keyframes icc{
-  0%{
+@keyframes icc {
+  0% {
     filter: hue-rotate(1deg);
   }
-  50%{
+  50% {
     filter: hue-rotate(360deg);
   }
-  100%{
-  filter: hue-rotate(1deg);
+  100% {
+    filter: hue-rotate(1deg);
   }
 }
 
 #banner-typed-text {
-  font-size:19px;
+  font-size: 19px;
   font-style: italic;
-  font-family: 'Mochiy Pop P One', sans-serif;
+  font-family: "Mochiy Pop P One", sans-serif;
 }
 
-.section-home{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  margin:auto;
+.section-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   line-height: 1.75;
-  text-align:center;
-  width:95%;
-  & strong{
+  text-align: center;
+  width: 95%;
+  & strong {
     font-weight: normal;
   }
-  & li{
+  & li {
     list-style-type: none;
-    text-align:center;
+    text-align: center;
   }
 }
 
-.section-top{
-  background-color:#EBEAFE;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-around;
-  align-items:center;
+.section-top {
+  background-color: #ebeafe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 5vh;
-  margin-bottom:10vh;
-  padding:5vh;
-  border-radius:16px;
+  margin-bottom: 10vh;
+  padding: 5vh;
+  border-radius: 16px;
 }
 
-#poletti{
-  width:200px;
-  height:auto;
-  border-radius:50%;
+#poletti {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
   margin: 3vh auto;
 }
 
 .relief-green {
-  display:inline-block;
-  width:90%;
-  margin:3vh auto;
+  display: inline-block;
+  width: 90%;
+  margin: 3vh auto;
   border: 1px solid transparent;
-  border-radius:16px;
-  padding:0.3em;
-  background-color: #E4FFF4;
-  color:#33D792;
-  font-weight:900;
-  font-size:1.375em;
+  border-radius: 16px;
+  padding: 0.3em;
+  background-color: #e4fff4;
+  color: #33d792;
+  font-weight: 900;
+  font-size: 1.375em;
   vertical-align: baseline;
 }
 
 .relief-red {
-  display:inline-block;
-  width:90%;
-  margin:3vh auto;
+  display: inline-block;
+  width: 90%;
+  margin: 3vh auto;
   border: 1px solid transparent;
-  border-radius:16px;
-  padding:0.3em;
-  background-color: #FEE0E0;
-  color:#FD0F13;
-  font-weight:900;
-  font-size:1.375em;
+  border-radius: 16px;
+  padding: 0.3em;
+  background-color: #fee0e0;
+  color: #fd0f13;
+  font-weight: 900;
+  font-size: 1.375em;
   vertical-align: baseline;
 }
 
 .relief-violet {
-  display:inline-block;
-  width:90%;
-  margin:3vh auto;
+  display: inline-block;
+  width: 90%;
+  margin: 3vh auto;
   border: 1px solid transparent;
-  border-radius:16px;
-  padding:0.3em;
-  background-color: #EBEAFE;
-  color:#7D74FE;
-  font-weight:900;
-  font-size:1.375em;
+  border-radius: 16px;
+  padding: 0.3em;
+  background-color: #ebeafe;
+  color: #7d74fe;
+  font-weight: 900;
+  font-size: 1.375em;
   vertical-align: baseline;
 }
 
 .relief-yellow {
-  display:inline-block;
-  width:90%;
-  margin:3vh auto;
+  display: inline-block;
+  width: 90%;
+  margin: 3vh auto;
   border: 1px solid transparent;
-  border-radius:16px;
-  padding:0.3em;
-  background-color: #FCF8EA;
-  color:#FEC661;
-  font-weight:900;
-  font-size:1.375em;
+  border-radius: 16px;
+  padding: 0.3em;
+  background-color: #fcf8ea;
+  color: #fec661;
+  font-weight: 900;
+  font-size: 1.375em;
   vertical-align: baseline;
 }
 
 .relief-blue {
-  display:inline-block;
-  width:90%;
-  margin:3vh auto;
+  display: inline-block;
+  width: 90%;
+  margin: 3vh auto;
   border: 1px solid transparent;
-  border-radius:16px;
-  padding:0.3em;
-  background-color: #E9F9FB;
-  color:#67DAFA;
-  font-weight:900;
-  font-size:1.375em;
+  border-radius: 16px;
+  padding: 0.3em;
+  background-color: #e9f9fb;
+  color: #67dafa;
+  font-weight: 900;
+  font-size: 1.375em;
   vertical-align: baseline;
 }
 
-
-.icones{
+.icones {
   display: flex;
-  flex-wrap:wrap;
-  justify-content:center;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
-  margin-bottom:10vh;
+  margin-bottom: 10vh;
 }
 
-.icones-techno, .chrono{
-  width:15.5vh;
-  height:auto;
-  margin:3vh;
+.icones-techno,
+.chrono {
+  width: 15.5vh;
+  height: auto;
+  margin: 3vh;
   border-radius: 50%;
 }
 
-.menu{
-  border:2px solid #FEC661;
-  background-color:#FEC661;
-  width:80%;
-  border-radius:16px;
+.menu {
+  border: 2px solid #fec661;
+  // background-color:#FEC661;
+  width: 80%;
+  border-radius: 16px;
   & div h2 {
-    font-size:30px;
-    font-weight:bold;
+    font-size: 30px;
+    font-weight: bold;
   }
 }
 
 .contacter {
-  border: 3px solid #67DAFA;
-  border-radius:16px;
-  padding:0.5em;
-  background-color: #E9F9FB;
-  &:hover{
-  background-color: #67DAFA;
-  border: 3px solid black;
+  border: 3px solid #67dafa;
+  border-radius: 16px;
+  padding: 0.5em;
+  background-color: #e9f9fb;
+  &:hover {
+    background-color: #67dafa;
+    border: 3px solid black;
   }
 }
 
-.chrono{
-  margin-bottom:10vh;
-  width:200px;
+.chrono {
+  margin-bottom: 10vh;
+  width: 200px;
 }
 
-.carte-visite{
-  background-color:#EBEAFE;
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction:row;
-  justify-content:center;
-  margin-top:3vh;
-  border-top:1px solid black;
-  & div{
-  margin:2vh;
+.carte-visite {
+  background-color: #ebeafe;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3vh;
+  border-top: 1px solid black;
+  & div {
+    margin: 2vh;
   }
 }
