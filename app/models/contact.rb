@@ -17,7 +17,7 @@ class Contact < MailForm::Base
       subject: 'Contact from stephanepoletti.com',
       to: 'polettiweb@gmail.com',
       from: %("#{name}" <#{email}>)
-      
+
     }
   end
 end
